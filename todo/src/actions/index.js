@@ -8,3 +8,12 @@ export const addTodo = newTodo => {
   };
 }
 
+export const DONE = "DONE";
+
+export const toggle = index => {
+  return{
+    type: DONE,
+    payload: index
+  };
+}
+
